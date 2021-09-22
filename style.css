@@ -7,104 +7,76 @@ body{
     margin: auto;
     background-color: rgb(240, 243, 247);
 }
-.menu{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(12, 196, 193));
-    /* background-color:rgb(64, 224, 208); */
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-}
 
-.navList{
-    display: flex; 
-    justify-content: flex-end;
-    /* to verticle align text */
-    vertical-align: middle;  
-    /* this vertically aligns flex items */
-    align-items: center;  
-    margin: auto;
-    height: auto;
-    text-decoration: none;
-    list-style-type: none;
-    margin-right: 8%;
-}
-.navList li a{
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    color: black;
-    text-decoration: none;
-}
-.navList li a:hover{
-    background-color: rgb(122, 238, 226);
-}
-
-.content{
-    margin:80px 5px auto 5px;
-}
-
-.sectionDiv {
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 30% auto;
-    grid-gap: 10px;
-    margin-top: 10%;
-}
-.col-left {
-    grid-row-start: 1;
-    grid-row-end: 3; 
-}
-.col-left > * {
-    margin: auto auto auto 30%;
-}
-.col-right {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 60%;
-}
-
-/* before making menu fixed, old css of sections 
-#about, #education, #projects, #resume{
-    display: flex;
+    .menu{
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(12, 196, 193));
+        /* background-color:rgb(64, 224, 208); */
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
     
-    justify-content: space-evenly;
-    height: 90vh; 
-    margin-top: 100px;
-}
-.col-left {
-     background-color: lightskyblue; 
-    display: flex;
-    margin: auto;
-    padding: 10px;
-    flex: 40%;
-     puts Name to the right side of the box 
-    justify-content: flex-end;
-}
-#nameId{
-     vertically align itself to the center 
-    align-self: center;
-    font-size: 2.5rem;
-} 
-.col-right{
-     background-color: lightseagreen; 
-    display: flex;  
-    flex-direction: column;
-    margin: auto;
-    padding: 10px;
-    flex: 60%;
-     vertically aligns child elements 
-    justify-content: center;
-}
-.col-right p{
-    width: 80%;
-    align-self: flex-start; 
-}
-#nameId{
-    align-self: center;
-}
- footer{
-    height: 10vh;
-    background-color: rebeccapurple;
-} */
+    .navList{
+        display: flex; 
+        justify-content: flex-end;
+        /* to verticle align text */
+        vertical-align: middle;  
+        /* this vertically aligns flex items */
+        align-items: center;  
+        margin: auto;
+        height: auto;
+        text-decoration: none;
+        list-style-type: none;
+        margin-right: 8%;
+    }
+    .navList li a{
+        display: block;
+        padding: 10px;
+        margin: 5px;
+        color: black;
+        text-decoration: none;
+    }
+    .navList li a:hover{
+        background-color: rgb(122, 238, 226);
+    }
+    
+    .content{
+        margin:80px 5px auto 5px;
+    }
+    
+    .sectionDiv {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-gap: 10px;
+        margin-top: 5%;
+    }
+    .col-left {
+        grid-row-start: 1;
+        grid-row-end: 3; 
+    }
+    .col-left > * {
+        margin: auto auto auto 30%;
+    }
+    .col-right {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 60%;
+        
+    }
+    .name {
+        color: rgba(56,114,165);
+    }
+    .h1size {
+        font-size: 2.5em;
+    }
+    .psize {
+        font-size: 1.2em;
+    }
+    .h3size {
+        font-size: 1.5em;
+    }
+    
+
