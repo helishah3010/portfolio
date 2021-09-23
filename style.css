@@ -5,78 +5,101 @@
 }
 body{
     margin: auto;
-    background-color: rgb(240, 243, 247);
 }
 
-    .menu{
-        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(12, 196, 193));
-        /* background-color:rgb(64, 224, 208); */
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-    }
-    
-    .navList{
-        display: flex; 
-        justify-content: flex-end;
-        /* to verticle align text */
-        vertical-align: middle;  
-        /* this vertically aligns flex items */
-        align-items: center;  
-        margin: auto;
-        height: auto;
-        text-decoration: none;
-        list-style-type: none;
-        margin-right: 8%;
-    }
-    .navList li a{
-        display: block;
-        padding: 10px;
-        margin: 5px;
-        color: black;
-        text-decoration: none;
-    }
-    .navList li a:hover{
-        background-color: rgb(122, 238, 226);
-    }
-    
-    .content{
-        margin:80px 5px auto 5px;
-    }
-    
-    .sectionDiv {
-        height: 80vh;
-        display: grid;
-        grid-template-columns: 30% auto;
-        grid-gap: 10px;
-        margin-top: 5%;
-    }
-    .col-left {
-        grid-row-start: 1;
-        grid-row-end: 3; 
-    }
-    .col-left > * {
-        margin: auto auto auto 30%;
-    }
-    .col-right {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        width: 60%;
-        
-    }
-    .name {
-        color: rgba(56,114,165);
-    }
-    .h1size {
-        font-size: 2.5em;
-    }
-    .psize {
-        font-size: 1.2em;
-    }
-    .h3size {
-        font-size: 1.5em;
-    }
-    
+.menu{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(12, 196, 193));
+    /* background-color:rgb(64, 224, 208); */
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
 
+.navList{
+    display: flex; 
+    justify-content: flex-end;
+    /* to verticle align text */
+    vertical-align: middle;  
+    /* this vertically aligns flex items */
+    align-items: center;  
+    margin: auto;
+    height: auto;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 8%;
+}
+.navList li a{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    text-decoration: none;
+}
+.navList li a:hover{
+    background-color: rgb(122, 238, 226);
+}
+
+.content{
+    margin:80px auto 5px 5px;
+}
+
+.sectionDiv {
+    /* height: 70vh; */
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 10px;
+    margin-top: 5%;
+}
+.col-left {
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+.col-left > * {
+    margin: auto auto auto 30%;
+}
+.col-right {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 60%;
+    
+}
+.name {
+    color: rgba(56,114,165);
+}
+.h1size {
+    font-size: 2.5em;
+}
+.psize {
+    font-size: 1.2em;
+}
+.h3size {
+    font-size: 1.5em;
+}
+
+.road {
+    display: flex;
+    margin: 15% auto;
+    width: 70%;
+    height: 60px;
+    background-color: #a09f9f;
+}
+.divider {
+    width: 68%;
+    margin: 30px 10px;
+    border-top: dashed;
+    color: rgb(241, 238, 124);
+    position: fixed;
+}
+.car {
+    position: relative;
+    margin-left: 80%;
+    animation-name:move-car;
+    animation-duration: 8s;
+    z-index: 1;
+}
+@keyframes move-car {
+    from {margin-left: 0%;}
+    to {margin-left: 80%;}
+}

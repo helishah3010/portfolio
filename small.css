@@ -15,7 +15,7 @@
         margin-right: 0%;
     }
     .sectionDiv {
-        height: 90vh;
+        /* height: 70vh; */
         display: block;
         margin-top: 10%;
     }
@@ -31,5 +31,9 @@
         width: 100%;
         
     }
+    .road {
+        display: none;
+    }
+ 
     
 }
