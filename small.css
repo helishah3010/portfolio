@@ -26,12 +26,13 @@
         margin: auto;
     }
     .col-right {
-        /* grid-row-start: 1; */
-        /* grid-row-end: 3; */
         width: 100%;
         
     }
-    .road {
+    .journeytitle {
+        margin: auto auto;
+    }
+    .road , .marker{
         display: none;
     }
  

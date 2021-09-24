@@ -43,10 +43,10 @@ body{
 
 .content{
     margin:80px auto 5px 5px;
+    height: 70vh;
 }
 
 .sectionDiv {
-    /* height: 70vh; */
     display: grid;
     grid-template-columns: 30% auto;
     grid-gap: 10px;
@@ -68,38 +68,64 @@ body{
 .name {
     color: rgba(56,114,165);
 }
-.h1size {
-    font-size: 2.5em;
-}
+
 .psize {
     font-size: 1.2em;
 }
-.h3size {
-    font-size: 1.5em;
+
+.journeytitle {
+    padding: 30px 30px;
+    margin:auto 40%;
+    color: #88b037;
+}
+.marker{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 20px;
+}
+.size {
+    width: 30px;
+    height: 30px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: auto;
+    border-radius: 5px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+.card > h4 {
+    color: #178f47;
 }
 
 .road {
     display: flex;
-    margin: 15% auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
     width: 70%;
     height: 60px;
     background-color: #a09f9f;
 }
-.divider {
-    width: 68%;
-    margin: 30px 10px;
-    border-top: dashed;
-    color: rgb(241, 238, 124);
-    position: fixed;
-}
+
 .car {
     position: relative;
-    margin-left: 80%;
     animation-name:move-car;
-    animation-duration: 8s;
+    animation-duration: 5s;
     z-index: 1;
+    left: 90%;
+}
+.divider {
+    position: relative;
+    left: -30px;
+    width: 95%;
+    border-top: dashed;
+    color: rgb(241, 238, 124);
 }
 @keyframes move-car {
-    from {margin-left: 0%;}
-    to {margin-left: 80%;}
+    from {left: 0%;}
+    to {left: 90%;}
 }
