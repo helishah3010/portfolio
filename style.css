@@ -75,40 +75,47 @@ body{
 
 .journeytitle {
     padding: 30px 30px;
-    margin:auto 40%;
-    color: #88b037;
+    margin-left: 40%;
+    color: #be529e;
 }
 .marker{
     display: flex;
-    justify-content: space-evenly;
-    width: 80%;
-    margin-left: 12%;
-    margin-top: 20px;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
 }
 .size {
     width: 30px;
     height: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.card-marker {
+    width: auto;
+    margin: 0px;
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: auto;
+    max-width: 200px;
     border-radius: 5px;
-    height: auto;
+    height: 100px;
     padding: 10px;
     margin: 10px;
 }
 .card > h4 {
-    color: #178f47;
+    color: #178f47;  
 }
 
 .road {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
-    width: 70%;
-    height: 60px;
+    margin: auto;
+    width: 90%;
+    height: 10%;
     background-color: #a09f9f;
+    /* flex-wrap: nowrap; */
 }
 
 .car {
