@@ -30,8 +30,7 @@
         
     }
     .journeytitle {
-        margin-left: 3%;
-        padding: 0%;
+        text-align: left;
     }
     .marker {
         flex-wrap: wrap;
@@ -48,6 +47,8 @@
     }   
     .card {
         width: 300px;
+        height: auto;
+        padding-bottom: 10px;
     }
 
 }
