@@ -1,15 +1,15 @@
-*{
+*  {
     /* use border-box to include padding and margin in the height and width */
     box-sizing: border-box;
     font-family: 'Mitr', sans-serif;
 }
+
 body{
     margin: auto;
 }
 
 .menu{
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(12, 196, 193));
-    /* background-color:rgb(64, 224, 208); */
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -41,8 +41,12 @@ body{
     background-color: rgb(122, 238, 226);
 }
 
+.navList img {
+    width: 30px;
+    height: 30px;
+}
 .content{
-    margin:80px auto 10px 5px;
+    margin:80px auto 20px 5px;
     height: auto;
 }
 
@@ -74,7 +78,7 @@ body{
 }
 
 .journeytitle {
-    padding: 30px 30px;
+    padding: 10px 10px;
     color: #be529e;
     text-align: center;
 }
@@ -122,7 +126,7 @@ body{
     animation-name:move-car;
     animation-duration: 5s;
     z-index: 1;
-    left: 90%;
+    left: 80%;
 }
 .divider {
     position: relative;
@@ -133,12 +137,12 @@ body{
 }
 @keyframes move-car {
     from {left: 0%;}
-    to {left: 90%;}
+    to {left: 80%;}
 }
 
 .projectSection{
     display: flex;
-    margin:5%;
+    margin:1%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -174,6 +178,11 @@ body{
 }
 .link {
     display: inline-block;
-    background-color: lightgrey;
-    padding: 10px;
+    background-color: #53bac5;
+    padding: 5px;
+    margin: 5px;
+}
+.link a, .link a:hover{
+    color: white;
+    text-decoration: none;
 }
