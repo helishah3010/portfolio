@@ -50,7 +50,12 @@
         height: auto;
         padding-bottom: 10px;
     }
-   
+    .childProject {
+        position: relative;
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+    }
   
 
 }
