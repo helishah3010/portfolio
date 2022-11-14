@@ -9,8 +9,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          browser: chrome
-          headless: true
-          start: npx cypress run
-          wait-on: https://helishah3010.github.io/portfolio/
+          start: npx cypress run --config video=false
+          
           
