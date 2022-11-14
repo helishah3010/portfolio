@@ -1,0 +1,22 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "This website is created from scratch without using any framework or ready-made templates.  It uses only HTML, CSS and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helishah3010/portfolio.git"
+  },
+  "author": "Heli Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helishah3010/portfolio/issues"
+  },
+  "homepage": "https://github.com/helishah3010/portfolio#readme",
+  "devDependencies": {
+    "cypress": "^11.0.1"
+  }
+}
