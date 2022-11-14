@@ -8,4 +8,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v3
+        with:
+          record: true
+        env:
+        # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: 38801b00-30a6-4a8f-a9b3-3b2912d1a853
           
